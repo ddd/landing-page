@@ -1,3 +1,210 @@
+body {
+  margin: 0;
+}
 .flex-container {
   display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: #1f2937;
+  color: white;
+}
+
+.header .header-logo {
+  flex: 1 1 auto;
+  align-self: flex-start;
+  font-size: 24px;
+  color: #f9faf8;
+  margin-top: 10px;
+  margin-left: 50px;
+  text-align: left;
+}
+
+.header .nav {
+  flex: 1 1 50%;
+  align-self: flex-end;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: right;
+  font-size: small;
+}
+
+.header .nav a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e5e7eb;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.header .nav a:hover {
+  color: lightskyblue;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #1f2937;
+  color: white;
+}
+
+.hero .hero-main {
+  flex: 1 1 40%;
+  align-self: baseline;
+  text-align: left;
+  padding: 50px;
+}
+
+.hero .hero-main h2 {
+  color: #f9faf8;
+  font-size: 32px;
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+
+.hero .hero-main p {
+  font-size: 12px;
+}
+
+.hero .hero-main button {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #3882f6;
+  color: white;
+  border-radius: 5px;
+}
+
+.hero .hero-secondary {
+  flex: 1 1 60%;
+  align-self: center;
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-top: 0;
+  padding-left: 25px;
+  text-align: justify;
+}
+
+.site-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-content .information {
+  flex: 1 1 34%;
+}
+
+.site-content .information h2 {
+  font-size: 26px;
+  font-weight: bolder;
+  color: #1f2937;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.site-content .information .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.site-content .information .cards .card {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.site-content .information .cards .card p {
+  font-size: 12px;
+}
+
+.site-content .information .cards .card img {
+  border-width: 2px;
+  border-color: #3882f6;
+  border-style: solid;
+  border-radius: 25px;
+}
+
+.site-content .testimonials {
+  flex: 1 1 34%;
+  background-color: #e5e7eb;
+  padding: 100px;
+}
+
+.site-content .testimonials q {
+  text-align: center;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: lighter;
+  color: #1f2937;
+}
+
+.site-content .call-to-action {
+  flex: 1 1 32%;
+  align-self: stretch;
+  background-color: #3882f6;
+  color: white;
+}
+
+.site-content .call-to-action .action-set {
+  display: flex;
+  flex-direction: row;
+}
+
+.site-content .call-to-action .action-set .action-text {
+  flex: 1 1 60%;
+  align-self: flex-start;
+  text-align: left;
+  padding: 50px;
+}
+
+.site-content .call-to-action .action-set .action-text h2 {
+  font-size: 26px;
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+.site-content .call-to-action .action-set .action-text p {
+  font-size: 12px;
+}
+
+.site-content .call-to-action .action-set .action-button {
+  flex: 1 1 40%;
+  align-self: center;
+  text-align: center;
+}
+
+.site-content .call-to-action .action-set .action-button button {
+  background-color: #3882f6;
+  color: white;
+  font-weight: bold;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 25px;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+.footer .copyright {
+  flex: 1;
 }
